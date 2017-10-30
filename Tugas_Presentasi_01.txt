@@ -1,0 +1,59 @@
+(* Nama Program : Tugas Presentasi senin 10-10-2017 *)
+(* Nama         : Galuh Panduriksa Buana*)
+(* Deskripsi    : Menentukan Matakuliah yang diremed dan tidak*)
+(* --------------------------------------------------- *)
+uses crt;
+     var
+        a,b,c,d,e:integer;
+        mk1,mk2,mk3,mk4,mk5:string;
+begin
+     write('Masukan Nilai Alpro              : ');readln(a);
+     write('Masukan Nilai sbo                : ');readln(b);
+     write('Masukan Nilai rti                : ');readln(c);
+     write('Masukan Nilai Bahasa Indonesia   : ');readln(d);
+     write('Masukan Nilai Pancasila          : ');readln(e);
+           if (a>50)then
+           mk1:=''
+           else mk1:='alpro,';
+           if (b>50)then
+           mk2:=''
+           else mk2:='sbo,';
+           if (c>50)then
+           mk1:=''
+           else mk3:='rti,';
+           if (d>50)then
+           mk4:=''
+           else mk4:=' Bahasa Indonesia,';
+           if (e>50)then
+           mk5:=''
+           else mk5:=' Pancasila,';
+           if (a and b and c and d and e<50) then
+           writeln('Anda mendapat Remedial : ',mk1,' ',mk2,' ',mk3,' ',mk4,' ',mk5,' ')
+           else
+           if (a and b and c and d and e>50) then
+           writeln('Anda Tidak Mendapatkan Remedial');
+readkey;
+end.
+ if SBO<50 then
+begin
+writeln('SBO')
+end;
+{pengandaian};;
+if RTI<50 then
+begin
+writeln('RTI')
+end;
+{pengandaian};;
+if BINDONESIA<50 then
+begin
+writeln('BINDONESIA')
+end;
+{pengandaian};;
+if PANCASILA<50 then
+begin
+writeln('PANCASILA');
+end;
+writeln('--------------------------------------------------');
+writeln('--------------------------------------------------');
+readkey;
+end.

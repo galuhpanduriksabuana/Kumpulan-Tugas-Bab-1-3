@@ -1,0 +1,107 @@
+uses crt;
+var
+b,i,j,pilih,N,Y : integer;
+d : char;
+begin
+writeln('|========================================|');
+writeln('| NAMA  : GALUH PANDURIKSA BUANA         |');
+writeln('| PRODI : TEKNIK INFORMATIKA             |');
+writeln('| TUGAS : MENU BINTANG SEGITIGA          |');
+writeln('| WAKTU : SENIN 2017,10,30               |');
+writeln('|========================================|');
+writeln();
+writeln();
+writeln('|========================================|');
+repeat
+writeln('|                  MENU                  |');
+writeln('|========================================|');
+writeln('|1.| Segitiga Bintang Rata Kanan         |');
+writeln('|2.| Segitiga Bintang Rata Kiri          |');
+writeln('|3.| Segitiga Bintang Rata Tengah        |');
+writeln('|4.| Segitiga Pascal                     |');
+writeln('|========================================|');
+writeln('|0.| Keluar Program                      |');
+writeln('|========================================|');
+
+write('Pilih nomor : ');readln(pilih);
+case pilih of
+1 : begin
+repeat
+write('Masukkan jumlah bintangnya = ');readln(i);
+if i>=3 then
+for b:=1 to i do
+begin
+for j:=1 to i-b do
+begin
+write (' ');
+end;
+for j:=b downto 1 do
+begin
+write('*');
+end;
+writeln();
+end;
+write('Kembali ke menu Y/N : ');readln(d);
+until (d='Y')
+end;
+2 : begin
+repeat
+write('Masukkan jumlah bintangnya = ');readln(i);
+if i>=3 then
+for b:=1 to i do
+begin
+for j:=1 to b do
+write('*');
+writeln();
+end;
+write('Kembali ke menu Y/N : ');readln(d);
+until(d='Y')
+end;
+3 : begin
+repeat
+write('Masukkan jumlah bintangnya = ');readln(i);
+if i>=3 then
+for b:=1 to i do
+begin
+for j:=1 to i-b do
+begin
+write (' ');
+end;
+for j:=b downto 1 do
+begin
+write('* ');
+end;
+writeln;
+end;
+write('Kembali ke menu Y/N : ');readln(d);
+until (d= 'Y')
+end;
+4 : begin
+repeat
+write('Masukkan jumlah bintangnya = ');readln(i);
+if i>=3 then
+for b:=1 to i do
+begin
+for j:=1 to i-b do
+begin
+write (' ');
+end;
+for j:=b downto 1 do
+begin
+write(y,'');
+end;
+writeln;
+end;
+write('Kembali ke menu Y/N : ');readln(d);
+until (d='Y');
+end;
+else
+writeln();
+writeln();
+writeln('Program keluar');
+writeln(' Terima Kasih ');
+writeln(' Telah Memeriksa');
+end;
+until(pilih=0);
+readkey;
+end.

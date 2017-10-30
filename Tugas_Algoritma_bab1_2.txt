@@ -1,0 +1,15 @@
+program tugas3;
+uses wincrt;
+var
+	alas,tinggi:Real;
+	hasil:Real;
+begin
+	writeln(' Nama  : Galuh Panduriksa Buana ');
+	writeln(' Prodi : Teknik Informatika ');
+	writeln('    ');
+	write('Masukan Alas : ');readln(alas);
+	write('Masukan Tinggi : ');readln(tinggi);
+	hasil:=alas*tinggi/2;
+	write('Hasilnya Adalah : ',hasil:2:2);
+readkey
+end.

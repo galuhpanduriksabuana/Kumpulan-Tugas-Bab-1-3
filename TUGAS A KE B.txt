@@ -1,0 +1,14 @@
+uses crt;
+var
+   a:Integer;
+   b:Integer;
+   c:Integer;
+begin
+     a:=b;
+     b:=a;
+     write(' a =');readln(b);
+     write(' b =');readln(a);
+     writeln(' Nilai A setelah ditukar ',a);
+     writeln(' Nilai B setelah ditukar ',b);
+     readkey;
+end.

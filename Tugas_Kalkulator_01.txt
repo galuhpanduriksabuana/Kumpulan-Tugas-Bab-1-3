@@ -1,0 +1,24 @@
+(* Nama Program : Tugas Kalkulator senin 10-10-2017 *)
+(* Nama         : Galuh Panduriksa Buana*)
+(* Deskripsi    : Membuat kalkulator sederhana*)
+(* --------------------------------------------------- *)
+uses crt;
+var
+   angka1,angka2:Real;
+   opert:Longint;
+begin
+     write('Masukan Angka Pertama : ');read(angka1);
+     write('Masukan Angka kedua   : ');read(angka2);
+     writeln('Silahkan Pilih      : ');
+     writeln('1.(+)   2.(-)   3.(*)   4.(/)   ');
+     write('Masukan Inputnya      :  ');readln(opert);
+       if (opert=1) then
+       writeln('hasilnya : ',angka1+angka2:2:0);
+       if (opert=2) then
+       writeln('hasilnya : ',angka1-angka2:2:0);
+       if (opert=3) then
+       writeln('hasilnya : ',angka1*angka2:2:0);
+       if (opert=4) then
+       writeln('hasilnya : ',angka1/angka2:2:0);
+readkey;
+end.
